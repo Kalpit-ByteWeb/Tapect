@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flex-container{
+    @apply container flex justify-between mx-auto items-center
+}
+.btn-primary{
+    @apply bg-primary text-white rounded font-primary
+}
+.btn-secondary{
+    @apply text-md leading-24 px-8 py-4 bg-white rounded text-primary font-primary font-semibold
+}
+.Nav-active{
+    @apply text-primary
+}
+.dropdown {
+    @apply absolute top-full left-0 bg-white border border-[#ccc] rounded py-2 shadow-sm z-10 min-w-40 hidden
+  }
+  
+.NavBar .relative:hover .dropdown {
+   @apply block
+  }
+  
+.dropdown-item {
+    @apply block px-4 py-2 text-secondary hover:text-primary
+}
+.BannerTitle{
+    @apply text-BannerTitle font-semibold font-primary leading-85 text-white mb-4
+}
+.Description{
+    @apply text-sm leading-30 font-medium text-white mb-6
+}
+.HeroBanner{
+    @apply bg-secondary w-full content-center
+}
