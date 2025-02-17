@@ -13,6 +13,9 @@ export default {
       },
       padding:{
         100: '6.25rem'
+      },
+      margin:{
+        88: '5.5rem'
       }
     },
     container:{
@@ -27,18 +30,25 @@ export default {
     borderRadius:{
       DEFAULT:'0.5rem',
       30:'1.875rem',
+      20: '1.25rem',
+      48: '3rem',
       full:'100%',
     },
     fontSize: {
       sm: '1rem',
       md: '1.125rem',
       lg: '1.25rem',
+      28: '1.75rem',
+      TitleHeading: '2.5rem',
       BannerTitle: '3.75rem',
+      60: '3.75rem',
     },
     lineHeight:{
       85: '5.313rem',
       30: '1.875rem',
+      40: '2.5rem',
       24: '1.5rem',
+      56: '3.5rem',
     },
     
   },
