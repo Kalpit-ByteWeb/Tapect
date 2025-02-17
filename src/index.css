@@ -29,8 +29,26 @@
     @apply text-BannerTitle font-semibold font-primary leading-85 text-white mb-4
 }
 .Description{
-    @apply text-sm leading-30 font-medium text-white mb-6
+    @apply text-sm leading-30 font-medium text-white font-secondary
 }
 .HeroBanner{
     @apply bg-secondary w-full content-center
+}
+.TitleHeading{
+    @apply text-TitleHeading leading-56 font-primary font-semibold
+}
+.Description-18{
+    @apply text-md leading-24 font-secondary font-normal text-white
+}
+.Heading-20{
+    @apply text-lg leading-30 font-primary font-semibold 
+}
+.Featuretitle{
+    @apply text-28 leading-40 font-bold
+}
+.Description-dark{
+    @apply text-sm leading-30 font-medium text-secondary font-secondary
+}
+.Title-60{
+    @apply text-60 leading-85 font-semibold font-primary
 }

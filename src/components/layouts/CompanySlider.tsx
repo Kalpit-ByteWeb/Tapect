@@ -1,4 +1,4 @@
-import { Image } from "../../../libs/Index";
+import { Image } from "../../libs/Index"; 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
