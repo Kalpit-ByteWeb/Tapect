@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button, Image } from "../../libs/Index";
+import ProductCard from "./ProductCard";
 
 interface ProductShowCaseType {
   Title: string;
@@ -32,8 +33,11 @@ const ProductShowCase: React.FC<ProductShowCaseType> = ({
   ViewProductBtnIconUrl,
 }) => {
   return (
-    <section className="px-[120px] my-88">
-      <div className="bg-secondary rounded-20">
+    <section className="py-88 relative">
+      <div className="absolute right-0 top-0">
+        <Image src="/Icons/tapect-design.svg" alt="tapect design" />
+      </div>
+      <div className="lg:w-[1700px] mx-auto bg-secondary rounded-20">
         <div className="container mx-auto py-12 space-y-12">
           <div className="flex flex-col items-center">
             <h2 className="text-white text-center Title-60 mb-4">
@@ -47,34 +51,16 @@ const ProductShowCase: React.FC<ProductShowCaseType> = ({
           <div>
             <div className="grid grid-cols-3 gap-6">
               {Productdatas.map((Productdata) => (
-                <div
-                  key={Productdata.ProductName}
-                  className="bg-[#FFFFFF1A] p-7 space-y-7 rounded-20">
-                  <Image
-                    src={Productdata.ProductImageUrl}
-                    alt={Productdata.ProductImageAlt}
-                  />
-                  <div className="space-y-4 border-t border-[#FFFFFF1A] pt-4">
-                    <div className="space-y-2">
-                      <h3 className="Heading-20 text-white">
-                        {Productdata.ProductName}
-                      </h3>
-                      <h4 className="Heading-20 text-white">
-                        {Productdata.ProductPrice}
-                      </h4>
-                    </div>
-
-                    <Button type="button" className="">
-                      {/* Use <a> tag directly for external links */}
-                      <Link
-                        to={Productdata.ButtonUrl}
-                        className="btn-primary px-4 py-2 flex items-center gap-[6px]">
-                        {Productdata.ButtonLabel}
-                        <Image src={Productdata.ButtonIcon} alt="Button Icon" />
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
+                <ProductCard
+                  ProductImageUrl={Productdata.ProductImageUrl}
+                  ProductImageAlt={Productdata.ProductImageAlt}
+                  ProductName={Productdata.ProductName}
+                  ProductPrice={Productdata.ProductPrice}
+                  ButtonLabel={Productdata.ButtonLabel}
+                  ButtonIcon={Productdata.ButtonIcon}
+                  ButtonUrl={Productdata.ButtonUrl}
+                  layout="ProductShowcase"
+                />
               ))}
             </div>
           </div>
