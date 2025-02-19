@@ -52,3 +52,36 @@
 .Title-60{
     @apply text-60 leading-85 font-semibold font-primary
 }
+.Iconslist:first-child{
+    @apply mt-[119px]
+}
+.Iconslist:after {
+    content: "";
+    width: 23%;
+    height: 2px;
+    position: absolute;
+    border: 1px dashed #fff;
+    transform: rotate(90deg);
+    top: 122%;
+    right: 81.5%;
+}
+.Iconslist:last-child::after{
+    display: none;
+}
+.IconNumber:after {
+    content: "";
+    width: 373px;
+    height: 2px;
+    position: absolute;
+    border-top: 1px dashed #fff;
+    top: 26px;
+    left: 108%;
+}
+.Iconslist-layout2:nth-child(3n) .IconNumber::after{
+    display: none;
+}
+@media (max-width:550px){
+    .IconNumber::after, .Iconslist:after{
+        display: none;
+    }
+}
