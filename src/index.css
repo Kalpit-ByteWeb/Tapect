@@ -38,13 +38,13 @@
     @apply text-TitleHeading leading-56 font-primary font-semibold
 }
 .Description-18{
-    @apply text-md leading-24 font-secondary font-normal text-white
+    @apply text-sm leading-30 font-secondary font-normal text-white
 }
 .Heading-20{
     @apply text-lg leading-30 font-primary font-semibold 
 }
 .Featuretitle{
-    @apply text-28 leading-40 font-bold
+    @apply text-28 leading-40 font-bold font-primary
 }
 .Description-dark{
     @apply text-sm leading-30 font-medium text-secondary font-secondary
@@ -54,6 +54,9 @@
 }
 .Iconslist:first-child{
     @apply mt-[119px]
+}
+.Title-24{
+    @apply text-24 leading-33 font-semibold font-primary
 }
 .Iconslist:after {
     content: "";

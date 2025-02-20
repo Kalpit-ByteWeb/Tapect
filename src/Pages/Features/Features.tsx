@@ -1,9 +1,17 @@
+import AdvanceFeatures from "../../components/layouts/AdvanceFeatures";
+import CentralisedConsole from "../../components/layouts/CentralisedConsole";
 import FAQSection from "../../components/layouts/FAQSection";
+import FeatureSection from "../../components/layouts/FeatureSection";
 import HeroBanner from "../../components/layouts/HeroBanner";
 import OrderingExperience from "../../components/layouts/OrderingExperience";
 import ProductShowCase from "../../components/layouts/ProductShowCase";
 import TapectLayout from "../../components/layouts/TapectLayout";
-import { Productdatas, IconListdatas, faqData } from "./FeaturesPageData";
+import {
+  Productdatas,
+  IconListdatas,
+  faqData,
+  AdvanceFeaturesdata,
+} from "./FeaturesPageData";
 
 const Features = () => {
   return (
@@ -19,7 +27,7 @@ const Features = () => {
         BannerImageUrl="/Home/DummyBanner.svg"
         BannerImageAlt="Hero Banner"
       />
-      <div className="container mx-auto space-y-120 pt-120 pb-8">
+      <div className="container mx-auto space-y-120 pt-120 pb-60">
         <TapectLayout
           ImageUrl="/Features/Lightning-Fast-Performance.png"
           ImageAlt="Lightning Fast Performance"
@@ -50,6 +58,76 @@ const Features = () => {
         ViewProductBtnLabel="View More Products"
         ViewProductBtnIconUrl="/Icons/ButtonIcon.svg"
       />
+
+      <CentralisedConsole />
+
+      <AdvanceFeatures
+        Title="Advanced Features for"
+        TitleHighlight="Seamless Networking"
+        Description="Tapect cards come packed with advanced features for seamless networking. With NFC integration and QR technology, sharing your contact details is effortless across all devices. Our cards are cross-device compatible, easy to use, and even help generate leads, making it the ultimate tool for growing your network efficiently."
+        featuredata={AdvanceFeaturesdata}
+      />
+
+      <div className="bg-Feature-bg py-12">
+        <div className="container mx-auto gap-6 grid md:grid-cols-2 grid-cols-1">
+          <FeatureSection
+            title="Customizable Contact Exchange Form"
+            description="Make a lasting impression with Tapect, the digital business card that revolutionizes networking. With just one tap, effortlessly share your business and contact information, social media links, and more. No app required."
+            imageUrl="/Features/FeatureDummyImage.png"
+            imageAlt="Image"
+            layout="Vertical2"
+          />
+          <FeatureSection
+            title="Customizable Contact Exchange Form"
+            description="Make a lasting impression with Tapect, the digital business card that revolutionizes networking. With just one tap, effortlessly share your business and contact information, social media links, and more. No app required."
+            imageUrl="/Features/FeatureDummyImage.png"
+            imageAlt="Image"
+            layout="Vertical2"
+          />
+          <FeatureSection
+            title="Customizable Contact Exchange Form"
+            description="Make a lasting impression with Tapect, the digital business card that revolutionizes networking. With just one tap, effortlessly share your business and contact information, social media links, and more. No app required."
+            imageUrl="/Features/FeatureDummyImage.png"
+            imageAlt="Image"
+            layout="Vertical2"
+          />
+          <FeatureSection
+            title="Customizable Contact Exchange Form"
+            description="Make a lasting impression with Tapect, the digital business card that revolutionizes networking. With just one tap, effortlessly share your business and contact information, social media links, and more. No app required."
+            imageUrl="/Features/FeatureDummyImage.png"
+            imageAlt="Image"
+            layout="Vertical2"
+          />
+          <FeatureSection
+            title="Customizable Contact Exchange Form"
+            description="Make a lasting impression with Tapect, the digital business card that revolutionizes networking. With just one tap, effortlessly share your business and contact information, social media links, and more. No app required."
+            imageUrl="/Features/FeatureDummyImage.png"
+            imageAlt="Image"
+            layout="Vertical2"
+          />
+          <FeatureSection
+            title="Customizable Contact Exchange Form"
+            description="Make a lasting impression with Tapect, the digital business card that revolutionizes networking. With just one tap, effortlessly share your business and contact information, social media links, and more. No app required."
+            imageUrl="/Features/FeatureDummyImage.png"
+            imageAlt="Image"
+            layout="Vertical2"
+          />
+          <FeatureSection
+            title="Customizable Contact Exchange Form"
+            description="Make a lasting impression with Tapect, the digital business card that revolutionizes networking. With just one tap, effortlessly share your business and contact information, social media links, and more. No app required."
+            imageUrl="/Features/FeatureDummyImage.png"
+            imageAlt="Image"
+            layout="Vertical2"
+          />
+          <FeatureSection
+            title="Customizable Contact Exchange Form"
+            description="Make a lasting impression with Tapect, the digital business card that revolutionizes networking. With just one tap, effortlessly share your business and contact information, social media links, and more. No app required."
+            imageUrl="/Features/FeatureDummyImage.png"
+            imageAlt="Image"
+            layout="Vertical2"
+          />
+        </div>
+      </div>
 
       <OrderingExperience
         Title="Seamless Ordering Experience"

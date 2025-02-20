@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { Image } from "../../libs/Index";
 
 interface AboutTapectType {
-  index?: number;
   ImageUrl: string;
   ImageAlt: string;
   Title: string;
@@ -14,7 +13,6 @@ interface AboutTapectType {
 }
 
 const TapectLayout: React.FC<AboutTapectType> = ({
-  index,
   ImageUrl,
   ImageAlt,
   Title,
@@ -26,7 +24,6 @@ const TapectLayout: React.FC<AboutTapectType> = ({
 }) => {
   return (
     <div
-      key={index}
       className={`flex flex-col md:flex-row ${
         layout === "Reverse" ? "md:flex-row-reverse" : ""
       } items-center gap-12`}>

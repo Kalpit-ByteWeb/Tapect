@@ -22,7 +22,7 @@ const FeatureCardSection: React.FC<FeatureCardSectionType> = ({
   featureData,
 }) => {
   return (
-    <section className="bg-[#F3F3F3] py-12">
+    <section className="bg-[#F3F3F3] py-12 my-60">
       <div className="container mx-auto space-y-12">
         {/* Section Title */}
         <div className="text-center space-y-4">

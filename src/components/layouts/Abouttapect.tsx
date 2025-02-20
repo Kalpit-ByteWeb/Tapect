@@ -17,11 +17,11 @@ interface AboutTapectType {
 
 const AboutTapect: React.FC<AboutTapectData> = ({ aboutTapect }) => {
   return (
-    <section className="bg-[#F3F3F3] py-20">
+    <section className="bg-[#F3F3F3] py-20 my-60">
       <div className="container mx-auto space-y-88">
         {aboutTapect.map((aboutItem, index) => (
           <TapectLayout
-            index={index}
+            key={index}
             ImageUrl={aboutItem.ImageUrl}
             ImageAlt={aboutItem.ImageAlt}
             Title={aboutItem.Title}

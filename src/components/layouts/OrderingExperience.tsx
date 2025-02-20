@@ -65,11 +65,11 @@ const WithImageLayout: React.FC<LayoutProps> = ({
   Iconlistdatas,
 }) => {
   return (
-    <section className="py-88 relative">
+    <section className="py-60 px-120 relative">
       <div className="absolute left-0 top-0 -scale-x-100">
         <Image src="/Icons/tapect-design.svg" alt="tapect design" />
       </div>
-      <div className="lg:w-[1700px] mx-auto bg-secondary rounded-30">
+      <div className="bg-secondary rounded-30">
         <div className="container mx-auto py-12 space-y-12">
           <div className="flex flex-col items-center">
             <h2 className="TitleHeading text-white">{Title}</h2>
@@ -114,11 +114,11 @@ const WithoutImageLayout: React.FC<LayoutProps> = ({
   ViewProductBtnIconUrl,
 }) => {
   return (
-    <section className="relative">
+    <section className="py-60 px-120 relative">
       <div className="absolute left-0 top-0 -scale-x-100">
         <Image src="/Icons/tapect-design.svg" alt="tapect design" />
       </div>
-      <div className="lg:w-[1700px] mx-auto bg-secondary rounded-30">
+      <div className="bg-secondary rounded-30">
         <div className="container mx-auto py-12 space-y-12">
           <div className="flex flex-col items-center">
             <h2 className="TitleHeading text-white">{Title}</h2>

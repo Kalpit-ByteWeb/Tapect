@@ -40,7 +40,7 @@ const Home = () => {
         buttonIcon="/Icons/ButtonIconWhite.svg"
         layout="Horizontal"
       />
-      <div className="container mx-auto gap-6 flex flex-row">
+      <div className="pb-60 container mx-auto gap-6 flex flex-row">
         <div className="w-3/5">
           <FeatureSection
             title="One Tap, Endless Possibilities to"

@@ -36,7 +36,7 @@ const FAQSection: React.FC<FAQSectiontype> = ({
   }, []); // Empty dependency array ensures this runs only once
 
   return (
-    <section className="py-88">
+    <section className="py-60">
       <div className="container mx-auto space-y-12">
         <h2 className="TitleHeading text-center">
           {Title} <span className="text-primary">{TitleHighlight}</span>

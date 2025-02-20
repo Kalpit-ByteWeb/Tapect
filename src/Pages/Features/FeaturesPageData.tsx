@@ -106,3 +106,33 @@ export const faqData: FAQItemType[] = [
       "Digital business cards are a modern way to share your contact information.Digital business cards are a modern way to share your contact information.Digital business cards are a modern way to share your contact information.Digital business cards are a modern way to share your contact information.Digital business cards are a modern way to share your contact information.",
   },
 ];
+interface AdvanceFeaturestype {
+  FeatureTitle: string;
+  FeatureDescription: string;
+  FeatureImageUrl: string;
+  FeatureImageAlt: string;
+}
+
+export const AdvanceFeaturesdata: AdvanceFeaturestype[] = [
+  {
+    FeatureTitle: "Tapect Card",
+    FeatureDescription:
+      "Share all your contact details instantly with a single tap. Your Tapect card allows seamless connection, giving others immediate access to the information you want to share.",
+    FeatureImageUrl: "/Features/Tapect-card.png",
+    FeatureImageAlt: "Tapect Card",
+  },
+  {
+    FeatureTitle: "Tapect Console",
+    FeatureDescription:
+      "Effortlessly manage and customize your digital business cards from one central console. Update details, track usage, and ensure your card always reflects your latest info.",
+    FeatureImageUrl: "/Features/Tapect-card.png",
+    FeatureImageAlt: "Tapect Card",
+  },
+  {
+    FeatureTitle: "Tapect Mobile App",
+    FeatureDescription:
+      "Stay connected on the go! With the Tapect mobile app, you can quickly share your card, monitor activity, and manage your contacts anytime, anywhere.",
+    FeatureImageUrl: "/Features/Tapect-card.png",
+    FeatureImageAlt: "Tapect Card",
+  },
+];

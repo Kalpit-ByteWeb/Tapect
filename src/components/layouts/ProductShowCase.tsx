@@ -33,16 +33,15 @@ const ProductShowCase: React.FC<ProductShowCaseType> = ({
   ViewProductBtnIconUrl,
 }) => {
   return (
-    <section className="py-88 relative">
+    <section className="py-60 px-120 relative">
       <div className="absolute right-0 top-0">
         <Image src="/Icons/tapect-design.svg" alt="tapect design" />
       </div>
-      <div className="lg:w-[1700px] mx-auto bg-secondary rounded-20">
+      <div className=" bg-secondary rounded-20">
         <div className="container mx-auto py-12 space-y-12">
           <div className="flex flex-col items-center">
             <h2 className="text-white text-center Title-60 mb-4">
-              {Title}
-              <span className="text-primary">{TitleHighlight}</span>
+              {Title} <span className="text-primary">{TitleHighlight}</span>
             </h2>
             <p className="Description-18 text-center max-w-[856px]">
               {Description}
@@ -50,8 +49,9 @@ const ProductShowCase: React.FC<ProductShowCaseType> = ({
           </div>
           <div>
             <div className="grid grid-cols-3 gap-6">
-              {Productdatas.map((Productdata) => (
+              {Productdatas.map((Productdata, index) => (
                 <ProductCard
+                  key={index}
                   ProductImageUrl={Productdata.ProductImageUrl}
                   ProductImageAlt={Productdata.ProductImageAlt}
                   ProductName={Productdata.ProductName}

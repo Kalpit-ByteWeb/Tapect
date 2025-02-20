@@ -1,4 +1,4 @@
-import { Image } from "../../libs/Index"; 
+import { Image } from "../../libs/Index";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
@@ -17,7 +17,7 @@ const logos = [
 const CompanySlider = () => {
   return (
     <section className="w-full overflow-hidden">
-      <div className="container mx-auto pt-10 pb-20">
+      <div className="container mx-auto pt-10 pb-60">
         <div className="flex items-center">
           <h2 className="text-lg px-8 py-4 w-fit font-primary leading-30 font-semibold text-secondary border border-border_color rounded-30">
             Trusted by Global Companies
@@ -36,13 +36,12 @@ const CompanySlider = () => {
                 disableOnInteraction: false,
               }}
               modules={[Autoplay]}
-              className="swiper-class"
-            >
+              className="swiper-class">
               {logos.map((logo, index) => (
                 <SwiperSlide key={index} className="w-auto flex-shrink-0">
-                  <Image 
-                    src={logo} 
-                    alt="Company logo" 
+                  <Image
+                    src={logo}
+                    alt="Company logo"
                     className="w-[120px] h-auto object-contain"
                   />
                 </SwiperSlide>

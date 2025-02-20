@@ -29,9 +29,7 @@ const ProductCard: React.FC<ProductDataType> = ({
     layout === "Products" ? "border-none" : "border-[#FFFFFF1A]";
   const fontColor = layout === "Products" ? "text-secondary" : "text-white";
   return (
-    <div
-      key={ProductName}
-      className={`${backgroundColor} p-7 space-y-7 rounded-20`}>
+    <div className={`${backgroundColor} p-7 space-y-7 rounded-20`}>
       <Image src={ProductImageUrl} alt={ProductImageAlt} />
       <div className={`space-y-4 border-t ${borderColor} pt-4`}>
         <div className="space-y-2">
